@@ -28,4 +28,15 @@ window.onload = function () {
         ? "0 0 10px #00ff00, 0 0 20px #33ff33, 0 0 30px #66ff66"
         : "0 0 10px #ff0000, 0 0 20px #ff3333, 0 0 30px #ff6666";
   }, 500); // Change color every 500ms
+
+  // Create image element
+  var img = document.createElement("img");
+  img.src = "hac.jpg"; // Ensure this file exists in the same directory
+  img.alt = "Hacked Image";
+  img.style.marginTop = "20px";
+  img.style.width = "100vw"; // Adjust size as needed
+  img.style.height = "148vh";
+
+  // Add image to the page
+  document.body.appendChild(img);
 };
